@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'DsDigib';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../font/DS-DIGIB.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Analogist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../font/Analogist.ttf') format('truetype');
+}

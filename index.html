@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" size="16*16" href="img/check.png">
+  <title>TODO LIST</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="todoTitle_wrap hidden">
+      <h3 class="todoTitle">Todo</h3>
+    </div>
+    <div id="weather">
+      <div class="container">
+        <span class="city"></span>
+        <img src="" alt="">
+        <span class="temp"></span>
+      </div>
+    </div>
+    <div class="music_wrap">
+      <audio controls loop>
+          <source src="music/Tritonal - Out My Mind.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="logoutBtn_wrap hidden">
+      <img id="logoutBtn" src="./img/logoutBtn.png" alt="">
+    </div>
+  </div>
+
+  <div class="todoList_wrap hidden">
+    <div>
+      <form id="todo-form">
+        <input type="text" placeholder="New todo" autocomplete="off" required>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+
+  <h1>00:00</h1>
+  <h2></h2>
+  <form id="login-form" class="hidden">
+    <input type="text" placeholder="What is your name?" maxlength="15" autocomplete="off" required>
+  </form>
+  <h3 id="greeting" class="hidden"></h3>
+
+  <div id="quote">
+    <div>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <script src="js/greeting.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>

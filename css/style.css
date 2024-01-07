@@ -1,0 +1,152 @@
+* { padding:0; margin:0; }
+ul,li { list-style:none; margin: 0; padding: 0; }
+
+body {
+  position: relative; width:100%; height:100%;
+  color: #fff;
+}
+
+.hidden{
+  display: none;
+}
+
+
+/* 상단 메뉴 */
+.nav {
+  width: 100%; position: fixed;
+}
+/* 상단 메뉴 - Todo */
+.nav .todoTitle_wrap {
+  padding: 15px;
+}
+.nav .todoTitle_wrap h3 {
+  display: inline-block; cursor: pointer;
+}
+/* 상단 메뉴 - logout */
+.nav .logoutBtn_wrap {
+  position: absolute; right: 15px; top: 15px;
+  padding: 0;
+}
+.nav .logoutBtn_wrap img {
+  width: 30px; height: 30px; cursor: pointer;
+}
+/* 상단 메뉴 - 날씨 */
+#weather {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .5); border-radius: 10px;
+  position: absolute; top: 10px; right: 5%;
+}
+#weather .container {
+  display: flex; justify-content: center; align-items: center;
+}
+#weather .container img {
+  width: 100%; max-width: 30px;
+  margin: 0 10px;
+}
+#weather .container span {
+  font-size: 20px; font-style: normal;
+}
+/* 상단 메뉴 - 뮤직 */
+.music_wrap {
+  position: absolute; top: 10px; left: 100px;
+}
+.music_wrap audio {
+  width: 400px; height: 30px; opacity: .7; transition: all .8s;
+}
+.music_wrap audio:hover {
+  opacity: 1;
+}
+
+
+/* 투두리스트 */
+.todoList_wrap {
+  position: absolute; top: 55px; left: 15px; width: 30%;
+  background-color: rgba(0, 0, 0, .5); border-radius: 10px;
+}
+.todoList_wrap > div {
+  padding: 15px;
+}
+.todoList_wrap div input {
+  padding: 10px 20px; width: 100%; box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .5); outline: none; border: none; border-radius: 50px;
+  font-size: 18px; color: #fff;
+}
+.todoList_wrap div input::placeholder {
+  color: #fff;
+}
+#todo-list::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+#todo-list::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #7E00BF; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+#todo-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .1);  /*스크롤바 뒷 배경 색상*/
+}
+#todo-list {
+  width: 100%; height: 400px; margin-top: 15px;
+  overflow-y: scroll;
+}
+#todo-list li {
+  width: 100%; margin: 10px 0;
+}
+#todo-list li button {
+  border: none; cursor: pointer;
+  font-size: 18px;
+}
+#todo-list li span {
+  margin-left: 20px; cursor: url(../img/check.png) 16 16, auto;
+}
+.clearToDo {
+  text-decoration: line-through; text-decoration-thickness: 2px;
+}
+
+
+/* 시간, 날짜 */
+h1 {
+  width: 100%; text-align: center; padding-top: 8%;
+  font-size: 220px; font-family: "DsDigib";
+}
+h2 {
+  width: 100%; text-align: center;
+  font-size: 90px; font-family: "DsDigib";
+}
+
+
+/* 로그인, 이름 출력 */
+#login-form {
+  width: 100%; text-align: center;
+}
+#login-form input {
+  padding: 10px 30px; border-radius: 50px;
+  background-color: rgba(0, 0, 0, .5); outline: none; border: none;
+  font-size: 30px; color: #fff;
+}
+#login-form input::placeholder {
+  color: #fff; text-align: center;
+}
+#greeting {
+  width: 100%; text-align: center;
+  font-size: 50px;
+}
+
+
+/* 명언 */
+#quote {
+  position: absolute; left: 0; bottom: 15px; width: 100%;
+  text-align: center;
+}
+#quote div {
+  margin: 0 15px; padding: 10px 0;
+  border-radius: 50px; background-color: rgba(0, 0, 0, .5);
+}
+#quote div span:first-child {
+  display: block; 
+  font-size: 25px; font-weight: bold; font-family: "Analogist"; letter-spacing: 2px;
+}
+#quote div span:last-child {
+  display: block; padding-top: 5px;
+  color: rgba(255, 255, 255, .5);
+}
